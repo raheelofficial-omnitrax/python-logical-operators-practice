@@ -1,0 +1,59 @@
+# Logical operators = used to combine conditional statements
+#   and = checks if both statements are true
+#   or  = checks if at least one statement is true
+#   not = True if the condition is false, and vice versa
+
+# Using 'and'
+temp = 25
+if temp > 0 and temp < 30:
+    print("The temperature is good")
+else:
+    print("The temperature is bad")
+
+# Using 'or'
+temp = 35
+if temp < 0 or temp > 30:
+    print("The temperature is bad")
+else:
+    print("The temperature is good")
+
+# Using 'not'
+sunny = True
+if not sunny:
+    print("It is cloudy outside")
+else:
+    print("It is sunny outside")
+
+
+
+
+# Conditional expression = A one-line shortcut for the if-else statement (ternary operator)
+#                print or assign one of two values based on a codition
+#                X if codition else Y
+
+num = 5
+
+print("Positive" if num > 0 else "Negatice")
+
+num = 6
+result = "EVEN" if num % 2 == 0 else "ODD"
+print(result)
+
+num = 5
+a = 6 
+b = 7
+age = 25
+temperature = 30 
+user_role = "admin"
+
+max_num = a if a > b else b
+min_num = a if a < b else b
+status = "Adult" if age >= 18 else "minor"
+weather = "Hot" if temperature > 20 else "Cold"
+access_level = "Full Access" if user_role == "admin" else "Limited Access"
+
+print(max_num)
+print(min_num)
+print(status)
+print(weather)
+print(access_level)
